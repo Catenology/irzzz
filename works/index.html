@@ -1,0 +1,20 @@
+---
+layout: page
+title: My Works
+weight: 1
+showonhome: false
+permalink: /works/
+---
+<div class="works">
+	<ul class="list-unstyled gallery">
+		{% assign works = site.categories.work | sort: "date" %}
+		{% for work in works %}
+		<li><a href="{{ work.url | prepend: baseurl }}">
+			<img src="{{ baseurl }}/images/{{ work.thumbnail }}" alt="{{ work.title }}" />
+			<div class="">
+				{{ work.title }}
+			</div>
+		</a></li>
+		{% endfor %}
+	</ul>
+</div>

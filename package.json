@@ -1,0 +1,26 @@
+{
+  "name": "irzzz",
+  "version": "1.0.0",
+  "description": "Purrfolio for @irzzz",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Catenology/irzzz.git"
+  },
+  "keywords": [
+    "portfolio",
+    "UX",
+    "designer"
+  ],
+  "author": "Cherry Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Catenology/irzzz/issues"
+  },
+  "homepage": "https://github.com/Catenology/irzzz#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,25 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Irene Zhu
+tagline: User Experience Designer
+email: irenez620@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Irene Zhu is a designer who is passionate about design and technology.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://irenezhu.com/" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+encoding: utf-8
+exclude:
+  - 'node_modules'
+  - '.travis.yml'
+  - 'gulpfile.js'
+  - 'package.json'
+  - 'README.md'
