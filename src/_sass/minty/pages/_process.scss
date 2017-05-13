@@ -1,0 +1,13 @@
+.process {
+  .icon-figure {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+    @media screen and (min-width: $breakpoint-md) {
+      text-align: center;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{% if include.caption %}
+    <figure class="icon-figure">
+        <div class="icon"><span class="{{ include.class }}"></span></div>
+        <figcaption class="label">{{ include.caption }}</figcaption>
+    </figure>
+{% else %}
+    <div><span class="{{ include.class }}"></span></div>
+{% endif %}

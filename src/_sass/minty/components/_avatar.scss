@@ -1,0 +1,24 @@
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  display: block;
+  background-color: $color-navy;
+  border-radius: 100%;
+  box-shadow: 0 0 0 .2rem $color-white;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &:hover {
+    box-shadow: 0 0 0 .2rem $color-sky;
+  }
+  &>img {
+    height: 100%;
+    min-width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }
+}

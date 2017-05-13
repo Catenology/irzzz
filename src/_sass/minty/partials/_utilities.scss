@@ -1,0 +1,45 @@
+.clearfix {
+  @include clearfix;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-inline {
+  li {
+    display: inline-block;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.mute {
+  opacity: .5;
+}
+
+.hidden {
+  visibility: hidden;
+}
