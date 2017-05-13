@@ -19,6 +19,7 @@
     "gulp-util": "^3.0.8",
     "minimist": "^1.2.0",
     "require-dir": "^0.3.1",
+    "rimraf": "^2.6.1",
     "vinyl-ftp": "^0.6.0",
     "vinyl-source-stream": "^1.1.0"
   },
