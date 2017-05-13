@@ -12,7 +12,7 @@ const conn = ftp.create({
   password: args.password,
   log: util.log,
 });
-const remotepath = 'site/wwwroot';
+const remotepath = '/';
 
 gulp.task('cleanremote', (cb) => {
     return conn.rmdir(remotepath, function(err) {
