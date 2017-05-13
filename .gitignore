@@ -2,7 +2,7 @@
 # Created by https://www.gitignore.io/api/node,jekyll
 
 ### Jekyll ###
-_site/
+dist/
 .sass-cache/
 .jekyll-metadata
 
