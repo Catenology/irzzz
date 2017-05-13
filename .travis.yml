@@ -1,0 +1,20 @@
+language: ruby
+rvm:
+- 2.2
+before_install:
+- ruby -v
+- gem install jekyll bundler jekyll-feed
+install:
+- rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm
+  && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm
+  install $TRAVIS_NODE_VERSION
+- npm install
+script:
+- gulp
+notifications:
+  slack:
+    secure: jdZ2u0IjgSOgaE5lYZvrWEDGF/C54jcS0CHl4ErJe3KHtTSzezJO5oou6nvTgJgDPxy+448mc4SlFWZFpUrqVFUBiPSyM0cd/K+J4PidDrwld+EOORAQ/CbllY6js6uIEUTtlILnBtt1xbK3bjrMgDWsG/fHV7Ste6uFk/CUZvmvGZ3FF6eYNrbYOZEa/EuAkwdHJN1Zl1k0atOAweqWiizDUT0YMJ87ygqdVlxoyFeWMxAWwXkVxPV0DWkuO7tTz2EUpbzxEKqNNNOsPBua3YNmSjuxhMHsa7Zo4VvtqeMUcUqUrK6Nsy0GT6fKRaW7p+3VRkosNo7E+Rbz4hdSz0ke3wyTUlF4Ll1JQdHWadCBz03DFprfeS0i35B4atQcBdj/2g00AGIVe2f8GPk/b348u3P+/lRHFmKvRbo1RkYFqXW1VRfETHRL2BxBoWJEBGuWKXXGUI7TkfLvAJEbPJfm6QNZUrkuP6Brpkpv2lwMypR+FRtTbDVXqRVTsUtLww8FwZI8B8YtjUP6+ASHLuCqjKza+JeQLr0VFgIHBSrZHWnsL00GRmWF3yCR4AGf2QZIfrhVcFBaOGgY7lEMWXnSoYHViCxGqyxqdgLrxV0Cp/TlCZ3Px0Ezb8CgE569PDFBDkiXOONjXpU2CgAyxurpPKYS5qwAn81fgRhHevI=
+env:
+  global:
+  - TRAVIS_NODE_VERSION="6"
+after_success: gulp deploy --host $FTP_HOST  --user $FTP_USER --password $FTP_PASSWORD

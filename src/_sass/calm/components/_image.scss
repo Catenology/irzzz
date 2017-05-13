@@ -1,0 +1,12 @@
+.img-responsive {
+  @include img-responsive;
+}
+
+figure {
+  img {
+    margin-bottom: 1rem;
+  }
+  figcaption {
+    text-align: center;
+  }
+}

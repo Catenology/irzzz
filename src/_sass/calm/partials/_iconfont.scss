@@ -1,0 +1,196 @@
+@font-face {
+  font-family: "CalmJelly";
+  src: url('fonts/CalmJelly.eot?v=1.0.1492117965');
+  src: url('fonts/CalmJelly.eot?#iefix') format('eot'),
+    url('fonts/CalmJelly.woff?v=1.0.1492117965') format('woff'),
+    url('fonts/CalmJelly.ttf?v=1.0.1492117965') format('truetype'),
+    url('fonts/CalmJelly.svg#CalmJelly?v=1.0.1492117965') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cj {
+  font-family: "CalmJelly";
+  speak: none;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 0.8em;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cj-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.cj { font-size: 1em; }
+.cj-2x { font-size: 2em; }
+.cj-3x { font-size: 3em; }
+.cj-4x { font-size: 4em; }
+.cj-5x { font-size: 5em; }
+.cj-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+/* Spinning animation =========== */
+.cj-ani-spin {
+  webkit-animation: cj-ani-spin 2s infinite linear;
+  -moz-animation: cj-ani-spin 2s infinite linear;
+          animation: cj-ani-spin 2s infinite linear;
+}
+.cj-ani-spin-pulse {
+  -webkit-animation: cj-ani-spin 1s infinite steps(10);
+  -moz-animation: cj-ani-spin 1s infinite steps(10);
+          animation: cj-ani-spin 1s infinite steps(10);
+}
+@-webkit-keyframes cj-ani-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-moz-keyframes cj-ani-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes cj-ani-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+
+.cj-logo-simple:before {
+	content: "\E000";
+}
+
+.cj-chevron-left:before {
+	content: "\E001";
+}
+
+.cj-chevron-right:before {
+	content: "\E002";
+}
+
+.cj-chevron-up:before {
+	content: "\E003";
+}
+
+.cj-chevron-down:before {
+	content: "\E004";
+}
+
+.cj-hamburger:before {
+	content: "\E005";
+}
+
+.cj-github:before {
+	content: "\E006";
+}
+
+.cj-facebook:before {
+	content: "\E007";
+}
+
+.cj-codepen:before {
+	content: "\E008";
+}
+
+.cj-dribbble:before {
+	content: "\E009";
+}
+
+.cj-linkedin:before {
+	content: "\E010";
+}
+
+.cj-twitter:before {
+	content: "\E011";
+}
+
+.cj-web:before {
+	content: "\E012";
+}
+
+.cj-pinterest:before {
+	content: "\E013";
+}
+
+.cj-instagram:before {
+	content: "\E014";
+}
+
+.cj-wechat:before {
+	content: "\E015";
+}
+
+.cj-mail:before {
+	content: "\E01A";
+}
+
+.cj-share:before {
+	content: "\E01B";
+}
+
+.cj-navigate-close:before {
+	content: "\E01C";
+}
+
+.cj-heart:before {
+	content: "\E01D";
+}
+
+.cj-heart-outline:before {
+	content: "\E01E";
+}
+
+.cj-puzzle:before {
+	content: "\E01F";
+}
+
+.cj-design:before {
+	content: "\E020";
+}
+
+.cj-research:before {
+	content: "\E021";
+}
+
+.cj-code:before {
+	content: "\E022";
+}
+
+.cj-analyze:before {
+	content: "\E023";
+}
+
+.cj-iteration:before {
+	content: "\E024";
+}
+
+.cj-handshake:before {
+	content: "\E025";
+}
+

@@ -1,0 +1,10 @@
+@mixin font($size, $line-height: null, $weight: null) {
+  font-size: $size; // IE fix
+  font-size: ($size / $font-size-default) * 1rem;
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+}

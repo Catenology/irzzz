@@ -1,0 +1,20 @@
+.icon-array {
+  text-align: center;
+  &>div {
+    display: inline-block;
+    height: 8rem;
+    padding: 1rem;
+  }
+  .icon {
+    font-size: 4rem;
+  }
+  .label {
+    font-size: 1rem;
+  }
+  .plus {
+    font-size: 2rem;
+    height: 8rem;
+    line-height: 8rem;
+    overflow: hidden;
+  }
+}

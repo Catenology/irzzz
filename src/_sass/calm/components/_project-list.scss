@@ -1,0 +1,45 @@
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  li {
+    font-size: $font-size-default;
+    img {
+      @include img-responsive;
+    }
+    figure {
+      position: relative;
+      margin: 0;
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $color-white;
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        @include transition(all, ease, .2s);
+      }
+    }
+    &:hover {
+      figure:after {
+        opacity: .2;
+      }
+    }
+
+    figcaption {
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      display: inline-block;
+      height: 24rem;
+      overflow: hidden;
+      width: 33.3%;
+      padding: .5rem;
+    }
+  }
+}
