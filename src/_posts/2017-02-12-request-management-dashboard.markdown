@@ -8,3 +8,20 @@ showcase: true
 ---
 
 <!--more-->
+
+<figure>
+  <img src="{{ site.url }}/assets/posts/{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/mta.jpg" alt="{{ page.title }}">
+  <figcaption>{{ page.title }}</figcaption>
+</figure>
+
+### Description
+
+Request Management Dashbard is used for initiating requests and monitoring statuses. The design includes web version and mobile responsive view.
+
+### Role
+
+UX Designer
+
+### Version
+
+1st-generation web app. Prior to this, everything was communicated manually through back-and-forth email.

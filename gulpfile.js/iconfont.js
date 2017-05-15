@@ -41,7 +41,7 @@ gulp.task('iconfont', () => {
             gulp.src('src/assets/_icons/_template.scss')
                 .pipe(consolidate('lodash', options))
                 .pipe(rename('_iconfont.scss'))
-                .pipe(gulp.dest('src/_sass/calm/partials/'));
+                .pipe(gulp.dest('src/_sass/minty/partials/'));
         })
         .pipe(gulp.dest('src/assets/fonts'));
     return fsiconfont;

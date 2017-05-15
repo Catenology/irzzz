@@ -1,45 +1,71 @@
 .project-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  overflow: hidden;
   font-size: 0;
-  li {
-    font-size: $font-size-default;
-    img {
-      @include img-responsive;
-    }
-    figure {
-      position: relative;
-      margin: 0;
-      &:after {
-        display: block;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: $color-white;
-        opacity: 0;
-        height: 100%;
-        width: 100%;
-        @include transition(all, ease, .2s);
-      }
-    }
-    &:hover {
-      figure:after {
-        opacity: .2;
-      }
-    }
+}
 
-    figcaption {
-      margin-bottom: 2rem;
-    }
+.project-item {
+  width: 100%;
+  height: 250px;
+  font-size: 1rem;
+  float: left;
+  position: relative;
 
-    @media screen and (min-width: $breakpoint-md) {
-      display: inline-block;
-      height: 24rem;
-      overflow: hidden;
-      width: 33.3%;
-      padding: .5rem;
+  @media screen and (min-width: $breakpoint-sm) {
+    width: 50%;
+    height: 350px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: 50%;
+    height: 400px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 33.3333%;
+    height: 350px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    width: 25%;
+    height: 500px;
+  }
+
+  &:hover,
+  &:focus {
+    .item-meta {
+      display: block;
+      opacity: 1;
     }
   }
+}
+
+.item-thumbnail {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.item-meta {
+  @include transition(all, ease, .3s);
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: fade-out($color-black, .6);
+  color: $color-white;
+  display: none;
+  opacity: 0;
+  z-index: 1000;
+  padding: 1rem;
 }

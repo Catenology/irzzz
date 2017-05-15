@@ -1,21 +1,9 @@
-<header class="nav" role="banner">
-  <div class="container">
-    <a class="avatar" href="{{ "/" | relative_url}}">
-      <img src="{{ site.url }}/assets/images/avatar.jpg" alt="{{ site.title }}" />
-    </a>
-    <div class="intro">
-      {% if site.title %}
-      <a href="{{ "/" | relative_url}}"><h1 class="intro-title">{{ site.title }}</h1></a>
-      {% endif %}
-      {% if site.description %}
-      <p>{{ site.description }}</p>
-      {% endif %}
-    </div>
-    <ul class="nav-menu">
-      {% assign pages = site.pages | where: "category","main" | sort: "weight" %}
-      {% for page in pages %}
-      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
-</header>
+<nav class="nav">
+  <ul class="nav-menu">
+    <li><a href="/">Home</a></li>
+    {% assign pages = site.pages | where: "category","main" | sort: "weight" %}
+    {% for page in pages %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

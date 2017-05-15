@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
-gulp.task('watch', ['build'], () => {
+gulp.task('watch', ['styles'], () => {
   browserSync.init({
     server: './dist',
   });

@@ -40,13 +40,9 @@
 
 /* Spinning animation =========== */
 .<%= className %>-ani-spin {
-  webkit-animation: <%= className %>-ani-spin 2s infinite linear;
-  -moz-animation: <%= className %>-ani-spin 2s infinite linear;
           animation: <%= className %>-ani-spin 2s infinite linear;
 }
 .<%= className %>-ani-spin-pulse {
-  -webkit-animation: <%= className %>-ani-spin 1s infinite steps(10);
-  -moz-animation: <%= className %>-ani-spin 1s infinite steps(10);
           animation: <%= className %>-ani-spin 1s infinite steps(10);
 }
 @-webkit-keyframes <%= className %>-ani-spin {

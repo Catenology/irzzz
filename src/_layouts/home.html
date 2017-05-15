@@ -3,45 +3,26 @@ layout: default
 ---
 
 <div class="home">
+  {% include intro.html %}
   <section>
-    <div class="icon-array">
-      <div class="feature">
-        <div class="icon cj cj-puzzle"></div>
-        <div class="label">Problem Solver</div>
-      </div>
-      <div class="plus">+</div>
-      <div class="feature">
-        <div class="icon cj cj-design"></div>
-        <div class="label">Designer</div>
-      </div>
-      <div class="plus">+</div>
-      <div class="feature">
-        <div class="icon cj cj-research"></div>
-        <div class="label">Researcher</div>
-      </div>
-      <div class="plus">+</div>
-      <div class="feature">
-        <div class="icon cj cj-code"></div>
-        <div class="label">Coder</div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <ul class="project-list">
+    <div class="project-list">
       {% assign showcase = site.posts | sort: "date" | reverse | limit: 6 | where: "showcase", true %}
       {% for project in showcase %}
-        <li>
+        <div class="project-item">
           <a href="{{ project.url }}">
-            <figure>
-              <img src="{{ site.url }}/assets/posts/{{ project.date | date: "%Y-%m-%d" }}-{{ project.title | slugify }}/{{ project.thumbnail }}" alt="{{ project.title }}">
-              <figcaption>{{ project.title }}</figcaption>
+            <figure class="item-thumbnail">
+              <img src="{{ site.url }}/assets/posts/{{ project.date | date: "%Y-%m-%d" }}-{{ project.title | slugify }}/thumbnail.jpg" alt="{{ project.title }}">
+              <figcaption class="item-meta">
+                <h4>{{ project.title }}</h4>
+                {% if project.excerpt %}
+                <h5>{{ project.excerpt }}</h5>
+                {% endif %}
+              </figcaption>
             </figure>
           </a>
-        </li>
+        </div>
       {% endfor %}
-    </ul>
-
+    </div>
     <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   </section>
 
