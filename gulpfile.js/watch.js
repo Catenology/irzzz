@@ -5,6 +5,6 @@ gulp.task('watch', ['styles'], () => {
   browserSync.init({
     server: './dist',
   });
-  gulp.watch('src/**/*.{md,html,yml}', ['build']);
+  gulp.watch('src/**/*.{md,html,yml,scss}', ['build']);
   gulp.watch('dist').on('change', browserSync.reload);
 });
