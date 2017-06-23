@@ -7,6 +7,7 @@ excerpt_separator: <!--more-->
 showcase: true
 ---
 
+Request Management Dashboard is used for initiating requests and monitoring statuses. The design includes web version and mobile responsive view.
 <!--more-->
 
 <figure>
@@ -16,7 +17,7 @@ showcase: true
 
 ### Description
 
-Request Management Dashbard is used for initiating requests and monitoring statuses. The design includes web version and mobile responsive view.
+Request Management Dashboard is used for initiating requests and monitoring statuses. The design includes web version and mobile responsive view.
 
 ### Role
 

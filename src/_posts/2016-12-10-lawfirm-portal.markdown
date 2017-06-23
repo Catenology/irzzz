@@ -4,7 +4,7 @@ title:  "Lawfirm Portal"
 date:   2016-12-10 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->

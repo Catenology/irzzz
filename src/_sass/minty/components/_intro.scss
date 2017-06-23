@@ -1,7 +1,3 @@
-.intro {
-  padding: 2rem;
-}
-
 .intro-title {
   @include font($font-size-default * 1.3, 1.6, 400);
   color: $color-sand;
@@ -14,9 +10,6 @@
 }
 
 @media screen and (min-width: $breakpoint-md) {
-  .intro {
-    padding: 4rem;
-  }
 
   .intro-title {
     @include font($font-size-default * 2, 1.6, 400);
@@ -24,16 +17,13 @@
   }
 
   .intro-subtitle {
-    @include font($font-size-default * 1.6, 1.6, 400);
+    @include font($font-size-default * 1.4, 1.6, 400);
     color: $color-grey;
     margin-top: 2rem;
   }
 }
 
 @media screen and (min-width: $breakpoint-lg) {
-  .intro {
-    padding: 6rem;
-  }
 
   .intro-title {
     @include font($font-size-default * 2.5, 1.6, 400);
@@ -41,7 +31,7 @@
   }
 
   .intro-subtitle {
-    @include font($font-size-default * 1.6, 1.6, 400);
+    @include font($font-size-default * 1.2, 1.6, 400);
     color: $color-grey;
     margin-top: 2rem;
   }

@@ -4,7 +4,7 @@ title:  "Hatchling Style Guide"
 date:   2015-03-29 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->

@@ -46,6 +46,7 @@ figure {
   background-color: $color-white;
   box-shadow: 0 15px 30px fade-out($color-black, .9);
   border-radius: .2rem;
+  padding: 2rem;
 
   @media screen and (min-width: $breakpoint-sm) {
     width: 90%;
@@ -57,5 +58,6 @@ figure {
     width: 80%;
     margin-top: 5%;
     margin-bottom: 5%;
+    padding: 4rem;
   }
 }

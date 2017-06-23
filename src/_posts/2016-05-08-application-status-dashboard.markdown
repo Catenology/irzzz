@@ -4,7 +4,7 @@ title:  "Application Status Dashboard"
 date:   2016-05-08 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->
@@ -26,4 +26,4 @@ Application Status Dashboard is an initiave led by Infrastructure team aiming to
 
 ### Role
 
-UX Designer 
+UX Designer

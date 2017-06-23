@@ -7,6 +7,7 @@ excerpt_separator: <!--more-->
 showcase: true
 ---
 
+Grant-Making system is the one-stop shop to manage grants throughout their life cycle, including ideating on concepts and ideas, inviting partner to work on concrete proposals, getting a grant approved, and managing an on-going grant.
 <!--more-->
 
 <figure>

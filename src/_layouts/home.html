@@ -4,23 +4,25 @@ layout: default
 
 <div class="home">
   {% include intro.html %}
-  <section>
-    <div class="project-list">
-      {% assign showcase = site.posts | sort: "date" | reverse | limit: 6 | where: "showcase", true %}
-      {% for project in showcase %}
-        <a href="{{ project.url }}" title="{{ project-title }}" class="project-item">
-          <img class="item-thumbnail" src="{{ site.url }}/assets/posts/{{ project.date | date: "%Y-%m-%d" }}-{{ project.title | slugify }}/thumbnail.jpg" alt="{{ project.title }}" />
-          <div class="item-meta">
-            <h4>{{ project.title }}</h4>
-            <h6>{{ project.date | date: "%m/%d/%Y" }}</h6>
-            {% if project.excerpt %}
-            <h5>{{ project.excerpt }}</h5>
-            {% endif %}
-          </div>
-        </a>
-      {% endfor %}
-    </div>
-    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  <section class="project-list featured clearfix">
+    {% assign featured = site.posts | where: "showcase", true %}
+    {% for project in featured %}
+      <a href="{{ project.url }}" class="project-item row" title="{{ project.title }}">
+        <div class="item-thumbnail six columns">
+          <img src="{{ site.url }}/assets/posts/{{ project.date | date: "%Y-%m-%d" }}-{{ project.title | slugify }}/thumbnail.jpg" alt="{{ project.title }}" />
+        </div>
+        <div class="item-meta six columns">
+          <h3>{{ project.title }}</h3>
+          <time>{{ project.date | date: "%m/%d/%Y" }}</time>
+          {% if project.excerpt %}
+          <p>{{ project.excerpt }}</p>
+          {% endif %}
+        </div>
+        <div class="mask">
+          <h5 class="center-xy">View details about {{ project.title }}</h5>
+        </div>
+      </a>
+    {% endfor %}
   </section>
 
 </div>

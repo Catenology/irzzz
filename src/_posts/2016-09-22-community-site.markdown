@@ -4,7 +4,7 @@ title:  "Community-site"
 date:   2016-09-22 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->
@@ -26,4 +26,4 @@ Community site on SF platform. Was created to foster an online community for sch
 
 ### Role
 
-UX designer, UI designer 
+UX designer, UI designer

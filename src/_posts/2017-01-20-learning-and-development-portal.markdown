@@ -4,7 +4,7 @@ title:  "Learning and Development Portal"
 date:   2017-01-20 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->

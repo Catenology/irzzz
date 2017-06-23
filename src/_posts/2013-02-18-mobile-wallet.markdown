@@ -4,7 +4,7 @@ title:  "Mobile Wallet"
 date:   2013-02-18 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->

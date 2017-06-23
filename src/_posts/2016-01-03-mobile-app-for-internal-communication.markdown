@@ -4,7 +4,7 @@ title:  "Mobile App for Internal Communication"
 date:   2016-01-03 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->

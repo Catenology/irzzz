@@ -4,7 +4,7 @@ title:  "My Profile"
 date:   2016-04-01 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->

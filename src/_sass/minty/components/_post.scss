@@ -1,0 +1,6 @@
+.post {
+  img {
+    @include img-responsive;
+    margin: 2rem 0;
+  }
+}

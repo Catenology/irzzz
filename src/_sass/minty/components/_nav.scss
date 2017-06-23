@@ -1,3 +1,24 @@
 .nav {
-  padding: 2rem;
+  @media screen and (max-width: $breakpoint-md) {
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+    top: 2rem;
+    right: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
+    color: $color-mint;
+    &:hover,
+    &:focus {
+      max-width: none;
+      max-height: none;
+    }
+  }
+}
+
+.nav-icon {
+  font-size: 2rem;
+  @media screen and (min-width: $breakpoint-md) {
+    display: none;
+  }
 }

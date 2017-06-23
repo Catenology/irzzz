@@ -4,7 +4,7 @@ title:  "University of Washington Library Website"
 date:   2013-05-04 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 <!--more-->
