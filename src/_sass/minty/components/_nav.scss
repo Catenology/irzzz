@@ -1,24 +1,75 @@
 .nav {
-  @media screen and (max-width: $breakpoint-md) {
-    position: fixed;
-    z-index: 1000;
-    overflow: hidden;
-    top: 2rem;
-    right: 2rem;
-    max-width: 2rem;
-    max-height: 2rem;
-    color: $color-mint;
-    &:hover,
-    &:focus {
-      max-width: none;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  &:hover,
+  &:focus {
+    .nav-menu {
       max-height: none;
+      opacity: 1;
     }
   }
 }
 
 .nav-icon {
-  font-size: 2rem;
-  @media screen and (min-width: $breakpoint-md) {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  font-size: 20px;
+  line-height: 2rem;
+  color: $color-mint-light;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: $color-white;
+  text-align: center;
+  &:hover,
+  &:focus {
+    color: $color-mint-dark;
+  }
+}
+
+.nav-menu {
+  background-color: $color-white;
+  list-style: none;
+  margin: 0;
+  min-width: 10rem;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  @include box-shadow;
+  li {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .nav {
+    position: relative;
+    z-index: auto;
+    top:auto;
+    right: auto;
+    height: auto;
+  }
+  .nav-icon {
     display: none;
+  }
+  .nav-menu {
+    position: relative;
+    text-align: right;
+    box-shadow: none;
+    max-height: none;
+    opacity: 1;
+    top: auto;
+  }
+  .nav-menu-item {
+    display: inline-block;
+    width: auto;
+    border-bottom: 2px dashed $color-mint-light;
   }
 }

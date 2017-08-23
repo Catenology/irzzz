@@ -1,0 +1,5 @@
+@mixin box-shadow($args: 0 0 8px 0 fade-out($color-black, .8)) {
+  -webkit-box-shadow: $args;
+  -moz-box-shadow: $args;
+  box-shadow: $args;
+}

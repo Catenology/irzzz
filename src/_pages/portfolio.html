@@ -7,21 +7,26 @@ weight: 2
 category: main
 ---
 
-<section>
-  <div class="project-list">
+<div class="portfolio">
+  <section class="project-list featured clearfix">
     {% assign projects = site.posts | sort: "date" | reverse %}
     {% for project in projects %}
-      <a href="{{ project.url }}" title="{{ project.title }}" class="project-item">
-        <img class="item-thumbnail" src="{{ site.url }}/assets/posts/{{ project.date | date: "%Y-%m-%d" }}-{{ project.title | slugify }}/thumbnail.jpg" alt="{{ project.title }}" />
-        <div class="item-meta">
-          <h3>{{ project.title }}</h4>
+      <a href="{{ project.url }}" class="project-item row" title="{{ project.title }}">
+        <div class="item-thumbnail six columns">
+          <img src="{{ site.url }}/assets/posts/{{ project.date | date: "%Y-%m-%d" }}-{{ project.title | slugify }}/thumbnail.jpg" alt="{{ project.title }}" />
+        </div>
+        <div class="item-meta six columns">
+          <h3>{{ project.title }}</h3>
           <time>{{ project.date | date: "%m/%d/%Y" }}</time>
           {% if project.excerpt %}
           <p>{{ project.excerpt }}</p>
           {% endif %}
         </div>
+        <div class="mask">
+          <h5 class="center-xy">View details about {{ project.title }}</h5>
+        </div>
       </a>
     {% endfor %}
-  </div>
-  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-</section>
+    <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  </section>
+</div>
