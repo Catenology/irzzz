@@ -1,0 +1,17 @@
+.button {
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: .2rem solid $color-mint;
+  border-radius: 4px;
+  *,
+  a {
+    &,
+    &:visited {
+      color: $color-mint;
+    }
+  }
+  &:hover,
+  &:focus {
+    border-color: $color-mint-dark;
+  }
+}

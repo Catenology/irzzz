@@ -1,27 +1,41 @@
-.resume {
-  ul {
-    li {
-      clear: left;
-    }
+.resume-right {
+  h4 {
+    color: $color-mint;
+  }
+}
+
+.resume-download {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: $breakpoint-sm) {
+  .resume-content {
+    display: table;
+    width: 100%;
   }
 
-  .row {
-    &:not(:first-child) {
-      margin-top: 2rem;
-    }
-
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
+  .resume-left,
+  .resume-right {
+    display: table-cell;
+    padding: 0 2rem;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-top: 0;
-    margin-bottom: 2rem;
+  .resume-left {
+    background-color: $color-mint;
+    color: $color-white;
+    width: 40%;
+
+    a {
+      &,
+      &:visited {
+        color: $color-white;
+        text-decoration: underline;
+      }
+
+      &:focus,
+      &:hover {
+        color: $color-black;
+      }
+    }
   }
 }
