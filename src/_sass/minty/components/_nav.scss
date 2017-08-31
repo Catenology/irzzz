@@ -3,6 +3,7 @@
   top: 2rem;
   right: 2rem;
   z-index: 1000;
+
   &:hover,
   &:focus {
     .nav-menu {
@@ -23,6 +24,7 @@
   border-radius: 4px;
   background-color: $color-white;
   text-align: center;
+
   &:hover,
   &:focus {
     color: $color-mint-dark;
@@ -52,13 +54,15 @@
   .nav {
     position: relative;
     z-index: auto;
-    top:auto;
+    top: auto;
     right: auto;
     height: auto;
   }
+
   .nav-icon {
     display: none;
   }
+
   .nav-menu {
     position: relative;
     text-align: right;
@@ -67,6 +71,7 @@
     opacity: 1;
     top: auto;
   }
+
   .nav-menu-item {
     display: inline-block;
     width: auto;

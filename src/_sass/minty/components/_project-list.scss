@@ -7,9 +7,11 @@
   overflow: hidden;
   position: relative;
   padding: 2rem;
+
   &:not(:first-child) {
     margin-top: 2rem;
   }
+
   &:hover,
   &:focus {
     .mask {
@@ -32,6 +34,7 @@
     height: 100%;
     @include transition(opacity, ease, .3s);
   }
+
   h3,
   h5 {
     margin: 0;
@@ -43,6 +46,7 @@
   overflow: hidden;
   position: relative;
   min-height: 300px;
+
   img {
     display: block;
     position: absolute;
