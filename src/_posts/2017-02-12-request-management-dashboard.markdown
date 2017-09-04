@@ -4,7 +4,7 @@ title:  "Request Management Dashboard"
 date:   2017-02-12 23:16:36 -0700
 categories: portfolio
 excerpt_separator: <!--more-->
-showcase: true
+showcase: false
 ---
 
 Request Management Dashboard is used for initiating requests and monitoring statuses. The design includes web version and mobile responsive view.
